@@ -1,6 +1,13 @@
+.caixa {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
 
 .destaques {
     display: grid;
+    grid-gap: .2rem;
     /* definimos as 4 colunas com 25% de tamanho do grid */
     grid-template-columns: 25% 25% 25% 25%;
     /* definimos que as 3 LINHAS terão 33.33% do tamanho do grid */
@@ -8,6 +15,14 @@
     /* os destaques terão 100vh (tamanho total da página) menos os 50px do cabeçalho */
     height: calc(100vh - 50px);
     
+}
+
+.destaques__titulo {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FDFDFD;
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
 }
 
 .destaques__principal {
@@ -76,9 +91,14 @@
 .destaques__categorias___item {
     align-items: center;
     background-color: #FDFDFD;
-    border: 5px solid transparent;
+    border: 2px solid transparent;
     color: #333333;
     display: flex;
     padding: 1rem;
     width: 50%;
+}
+
+.destaques__categorias___link {
+    text-decoration: none;
+    color: inherit;
 }
