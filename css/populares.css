@@ -1,0 +1,49 @@
+
+
+.populares {
+    padding: 3rem 0;
+}
+
+/* INÍCIO MONTAGEM DO CARD - Linhas 83 a 94
+**
+**
+*/
+.populares__card {
+    background-color: #fdfdfd;
+    display: grid;
+    grid-template-areas: 
+        "card-imagem"
+        "card-corpo";
+    grid-template-columns: 100%;
+    grid-template-rows: 173px auto; /* Define que a linha da imagem tera 173px e do conteudo automatico, preenchendo o restante */
+    margin-right: 1rem;
+    width: calc(20% - 1rem); /* Cada card tera 20% da tela -1rem do margin-right */
+}
+
+.populares__card___imagem {
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+.populares__card___corpo {
+    display: grid;
+    grid-area: card-corpo; /* Faz parte do template .populares__card */
+    grid-gap: .5rem;
+    grid-template-areas: 
+        "card-cabecalho"
+        "card-conteudo";
+    grid-template-rows: 50px auto; /* CAbeçalho tera 50px e o conteudo automatico */
+    padding: .75rem;
+}
+
+/*
+**
+**** FIM MONTAGEM DO CARD - Linhas 83 a 94 */
+
+.populares__conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: conteudo;
+    padding: 1rem 0;
+}
