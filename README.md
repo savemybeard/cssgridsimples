@@ -7,6 +7,3 @@ CSS Grid
 ```
 Em Desenvolvimento !
 ``` 
-abcd#� �c�s�s�g�r�i�d�s�i�m�p�l�e�s�
-�
-�
